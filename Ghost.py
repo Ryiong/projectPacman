@@ -21,7 +21,7 @@ class Ghost(Character):
         '''in - (self)'''
         self.surface = Ghost.images[0]
         self.rect = self.surface.get_rect()
-        self.rect.left = 315
+        self.rect.left = 310
         self.rect.top = 275
         self.speed = 1
         self.course = [0] * (50)
@@ -59,18 +59,18 @@ class Ghost(Character):
         self.rect.top = 275
         self.course = [0] * (50)
 
-    def add(self, ghosts):
-        '''in - (self, list of ghosts)
-        Determines is a ghost must be added, adds it to the list, and resets the add ghost timer.
-        Subtracts from the add ghost timer is no ghost is added.'''
-        Ghost.add_time -= 1
-        if len(ghosts) == 0:
-            if Ghost.add_time > int(Ghost.ADD_TIME / 10.0):
-                Ghost.add_time = int(Ghost.ADD_TIME / 10.0)
-
-        if Ghost.add_time <= 0:
-            ghosts.append(Ghost())
-            Ghost.add_time = Ghost.ADD_TIME
+    # def add(self, ghosts):
+    #     '''in - (self, list of ghosts)
+    #     Determines is a ghost must be added, adds it to the list, and resets the add ghost timer.
+    #     Subtracts from the add ghost timer is no ghost is added.'''
+    #     Ghost.add_time -= 1
+    #     if len(ghosts) == 0:
+    #         if Ghost.add_time > int(Ghost.ADD_TIME / 10.0):
+    #             Ghost.add_time = int(Ghost.ADD_TIME / 10.0)
+    #
+    #     if Ghost.add_time <= 0:
+    #         ghosts.append(Ghost())
+    #         Ghost.add_time = Ghost.ADD_TIME
 
     def teleport(self):
         '''in - (self)
@@ -93,15 +93,5 @@ class Ghost(Character):
             counter += 1
         return counter
 
-    def move(self, walls, pacman):
-        if len(self.course) > 0:
-            if self.canMove(self.course[0], walls) or self.rect.colliderect(pygame.Rect((268, 248), (112, 64))):
-                Character.move(self, self.course[0])
-                del self.course[0]
-            else:
-                self.course = []
-        # else:
-
-
-
-
+    # def move(self, walls, pacman):
+    #

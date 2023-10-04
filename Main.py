@@ -98,11 +98,7 @@ while keepGoing_game:
         # Check if pacman has eaten any pellets and delete them
         Pellets.check(Pellets(), pellets_small, pellets_large, pacman, ghosts)
 
-        # Add a new ghost if necessary
-        Ghost.add(Ghost(), ghosts)
 
-        # Check if ghost must teleport to the other side
-        Ghost.teleport(Ghost())
 
 
         # Check if blue ghosts must return to normal
@@ -110,7 +106,12 @@ while keepGoing_game:
             if g.isBlue:
                 g.checkBlue()
 
-        # Move ghosts
+        # # Move ghosts
+        # for g in ghosts:
+        #     g.move(walls, pacman)
+        #     # Check if ghost must teleport to the other side
+        #     g.teleport()
+
 
 
         # Draw screen
