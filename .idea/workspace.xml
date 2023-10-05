@@ -8,12 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ghost.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ghost.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/blue-ball.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/blue-ball.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/green-ball.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/green-ball.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/pink-ball.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/pink-ball.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/power-ball.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/power-ball.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/red-ball.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/red-ball.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/unable-ball.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/unable-ball.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696066432496</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update map">
+      <option name="closed" value="true" />
+      <created>1696410065717</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696410065718</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

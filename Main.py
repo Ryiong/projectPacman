@@ -18,6 +18,7 @@ from Ghost import Ghost
 from Walls import Walls
 from Pellets import Pellets
 from Sound import Sound
+from Node import Node
 
 # Create game objects
 background = pygame.image.load("assets/img/bg.png").convert()
@@ -26,6 +27,7 @@ ghosts = [Ghost()]
 walls = Walls.createList(Walls())
 pellets_small = Pellets.createListSmall(Pellets())
 pellets_large = Pellets.createListLarge(Pellets())
+node = Node.createNode((Node()))
 clock = pygame.time.Clock()
 pygame.mixer.music.load("assets/sound/bg_music.mp3")
 pygame.mixer.music.set_volume(1.5)
@@ -106,11 +108,11 @@ while keepGoing_game:
             if g.isBlue:
                 g.checkBlue()
 
-        # # Move ghosts
-        # for g in ghosts:
-        #     g.move(walls, pacman)
-        #     # Check if ghost must teleport to the other side
-        #     g.teleport()
+        # Move ghosts
+        for g in ghosts:
+            g.move(walls, pacman)
+            # Check if ghost must teleport to the other side
+            g.teleport()
 
 
 
